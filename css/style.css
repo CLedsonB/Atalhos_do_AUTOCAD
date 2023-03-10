@@ -34,7 +34,7 @@ h4 {
     margin: 20px 0;
     font-size: 20px;
 }
-p {
+span {
     font-size: 16px;
     text-align: justify;
 }
@@ -73,5 +73,57 @@ summary::marker ~ p {
 @media only screen and (min-width: 767px) {
 }
 
+/*   Estilo para notebooks, desktops   */
+
 @media only screen and (min-width: 1023px) {
+    h2 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 26px;
+    }
+    summary, details, span {
+        transition: all .5s;
+    }
+    details {
+        display: block;
+        margin: 1.3em 0;
+    }
+    details[open]:nth-child(odd) {
+        text-align: left;
+        transition: all .5s;
+    }
+    details[open]:nth-child(odd) summary {
+        padding-left: 60px;
+    }
+    details[open]:nth-child(even) {
+        text-align: right;
+        transition: all .5s;
+    }
+    details[open]:nth-child(even) summary {
+        padding-right: 60px;
+    }
+    details[open]:nth-child(even) span {
+        position: absolute;
+        left: 530px;
+        width: 70%;
+    }
+    span{
+        position: absolute;
+        float: left;
+        font-size: 22px;
+        width: 70%;
+        margin: 1.3em;
+    }
+    summary {
+        display: initial;
+        font-size: 50px;
+        margin-top: 50px;
+        padding-top: 60px;
+        height: 200px;
+        width: 200px;
+    }
+    summary:hover {
+        font-size: 65px;
+    }
 }
