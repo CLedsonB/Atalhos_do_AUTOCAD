@@ -105,13 +105,13 @@ summary::marker ~ p {
     }
     details[open]:nth-child(even) span {
         position: absolute;
-        left: 530px;
+        left: 230px;
         width: 70%;
     }
     span{
         position: absolute;
         float: left;
-        font-size: 22px;
+        font-size: 18px;
         width: 70%;
         margin: 1.3em;
     }
