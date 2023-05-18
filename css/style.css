@@ -70,7 +70,7 @@ summary::marker ~ p {
 
   /* Estilos para tablet */
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 }
 
 /*   Estilo para notebooks, desktops   */
